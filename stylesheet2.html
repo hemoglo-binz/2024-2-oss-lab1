@@ -5,18 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            font-family: Arial;
+            background-color: #d14836;
+            line-height: 20px;
+        }
+        .container{
+            min-width:900px;
+        }
+
+        .wrapper {
+            position:relative;
+            overflow: auto;
+        }
+
+        #top {
+            color: #ffffff;
+            padding: 15px;
+            font-size: 30px;
+            line-height: 26px;
+        }
+        #top h1 {
+            margin: 0;
+            line-height: 50px;
+        }
+
+        #menubar{
+            width: 190px;
+            float: right;
+        }
+
+        #main {
+            padding: 10px;
+            background-color: #ffffff;
+            font: 80% Verdana;
+        }
+
+        #main h1, #main h2{
+            color: #d14836
+        }
+
+        #sidebar {
+            background-color: #f6dad7;
+            color: #d14836;
+            padding: 10px;
+        }
+
+        #bottom {
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            color: #ffffff;
+        }
+
+        #menulist {
+            padding:0;
+            font: 16px verdana;
+        }
+
+        .menuitem {
+            width: 155px;
+            background-color: #d14836;
+            border: 1px solid #d14836;
+            border-radius: 40px;
+            color: #ffffff;
+            list-style-type: none;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .menuitem:nth-child(2) {
+            background-color: white;
+            color: #d14836;
+            font-weight:bold;
+        }
+
+        .menuitem:hover {
+            background-color: #ffffff;
+            color: #d14836;
+        }
+
+        a {
+            color:#d14836;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container wrapper">
         <div id="top">
-        <h1>Welcome to 서현빈's homepage (22100371)</h1>
+        <h1>Welcome to 서현빈's homepage(22100371)</h1>
         <p>Use the menu to select different Stylesheets</p>
         </div>
         <div class="wrapper">
             <div id="menubar">
                 <ul id="menulist">
-                    <li class="menuitem" onclick="location.href=('Stylesheet1.html')">Stylesheet 1</li>
+                    <li class="menuitem">Stylesheet 1</li>
                     <li class="menuitem">Stylesheet 2</li>
                     <li class="menuitem">Stylesheet 3</li>
                     <li class="menuitem">Stylesheet 4</li>
@@ -25,7 +114,7 @@
             <div id="main">
                 <h1>Same Page Different Styelsheets</h1>
                 <p>
-                    This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+                    "This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:"
                 <br>
                 <a href="http://127.0.0.1:3000/stylesheet1.html">Stylesheet1,</a>
                 <a href="http://127.0.0.1:3000/stylesheet2.html">Stylesheet2,</a>
